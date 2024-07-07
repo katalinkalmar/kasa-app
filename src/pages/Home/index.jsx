@@ -6,7 +6,6 @@ import { Link } from "react-router-dom"
 function App() {
   return <React.Fragment>
     <Banner />
-    <Link to="/Apropos">En savoir plus</Link>
   </React.Fragment>
 
 
