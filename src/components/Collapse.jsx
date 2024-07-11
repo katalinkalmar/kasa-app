@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import "../style/Collapse.scss";
+
 import fleche from "../assets/arrow.svg"
 
 
-export default function Collapse() {
+export default function Collapse(props) {
     const [isCollapsed, setIsCollapsed] = useState(false);
 
     function toggleCollapse() {
@@ -13,7 +13,7 @@ export default function Collapse() {
     return (
         <div>
             <div className="barreDepliant">
-                <h2 >Equipement</h2>
+                <h2> {props.aproposTitre} </h2> 
 
                 <img 
                     src={fleche} 
@@ -23,7 +23,7 @@ export default function Collapse() {
 
             </div>
             <div className={`collapse ${isCollapsed ? 'collapsed' : ''}`}>
-                <p>Contenu à afficher</p>
+                <p> {props.aproposTexte}</p>
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import logoKasa from "../assets/LOGO.svg"
 import { Link } from "react-router-dom"
-import "../style/Banner.scss"
+
 
 export default function Banner() {
     return (

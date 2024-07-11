@@ -1,37 +1,46 @@
-.collapse{
+.collapse {
+
+    width: auto;
+    height: auto;
+
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     max-height: 0;
-    padding: 20px;
-    p {
-        font-size: 18px;
-        font-weight: 400;
-        font-family: Montserrat;
 
+    p {
+        @include font(18px, 400)
     }
 }
-.collapse.collapsed{
-    max-height: 100px;
+
+.collapse.collapsed {
+    max-height: 1000px;
 }
+
 .barreDepliant {
     background-color: #ff6060;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     padding: 10px 15px;
+
     h2 {
         color: white;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 700;
+        @include font(24px, 700);
+        margin: 0;
+    }
 
+    img {
+        width: 32px;
+        height: 32px;
     }
 
 }
+
 .fleche {
     transform: rotate(0deg);
     transition: 0.4s ease-in-out;
 }
+
 .rotated {
     transform: rotate(180deg);
     transition: 0.4s ease-in-out;
