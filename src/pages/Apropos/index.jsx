@@ -1,4 +1,4 @@
-import Collapse from "../../components/Collapse"
+import Collapse from "../../components/Collapse/Collapse"
 import donneesApropos from "../../donnees/apropos.json"
 import image from "../../assets/img_apropos.png"
 import "./Apropos.scss"

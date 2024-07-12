@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import fleche from "../assets/arrow.svg"
+import fleche from "../../assets/arrow.svg"
 
 
 export default function Collapse(props) {

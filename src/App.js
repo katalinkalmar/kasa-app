@@ -7,8 +7,8 @@ import ErrorPage from "./pages/ErrorPage";
 
 //ajout des composants
 
-import Banner from "./components/Banner";
-import Footer from "./components/Footer";
+import Banner from "./components/Banner/Banner.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 
 function App() {

@@ -1,4 +1,4 @@
-import logoKasa from "../assets/LOGO.svg"
+import logoKasa from "../../assets/LOGO.svg"
 import { Link } from "react-router-dom"
 
 
