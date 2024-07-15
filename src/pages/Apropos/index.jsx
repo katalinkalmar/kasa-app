@@ -13,7 +13,7 @@ export default function Apropos() {
                         (elementApropos) => {
                             return <Collapse
                                 aproposTitre={elementApropos.aproposTitre}
-                                aproposTexte={elementApropos.aproposTexte}
+                                aproposTexte={<p>{elementApropos.aproposTexte}</p>}
                             />
                         }
                     )

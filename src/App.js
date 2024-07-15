@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Apropos from "./pages/Apropos";
 import ErrorPage from "./pages/ErrorPage";
+import FichesLogement from "./pages/FichesLogement";
 
 //ajout des composants
 
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/Apropos" element={<Apropos />} />
 					<Route path="*" element={<ErrorPage />} />
+					<Route path="/fichelogement/:id" element={<FichesLogement />} />
 				</Routes>
 			</main>
 			<Footer />

@@ -13,17 +13,17 @@ export default function Collapse(props) {
     return (
         <div>
             <div className="barreDepliant">
-                <h2> {props.aproposTitre} </h2> 
+                <h2> {props.aproposTitre} </h2>
 
-                <img 
-                    src={fleche} 
-                    onClick={toggleCollapse} 
-                    className={isCollapsed ? "fleche" : "fleche rotated"} 
+                <img
+                    src={fleche}
+                    onClick={toggleCollapse}
+                    className={isCollapsed ? "fleche" : "fleche rotated"}
                 />
 
             </div>
             <div className={`collapse ${isCollapsed ? 'collapsed' : ''}`}>
-                <p> {props.aproposTexte}</p>
+                {props.aproposTexte}
             </div>
         </div>
     );
