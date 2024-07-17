@@ -1,0 +1,27 @@
+.body-fiche {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 100px;
+    gap: 40px;
+    margin: auto;
+    background-color: $background-color;
+}
+
+.infobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.info1 {
+    display: flex;
+}
+
+.info2 {
+    display: flex;
+}
+
+.info3 {
+    display: flex;
+}

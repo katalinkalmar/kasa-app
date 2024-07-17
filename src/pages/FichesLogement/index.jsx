@@ -4,6 +4,7 @@ import donneeLogement from "../../donnees/logements.json"
 import Etiquette from "../../components/Etiquette/Etiquette"
 import Notation from "../../components/Notation/Notation"
 import Collapse from "../../components/Collapse/Collapse"
+import Carrousel from "../../components/Carrousel/Carrousel"
 
 export default function FichesLogement() {
     const { id } = useParams()
@@ -15,7 +16,7 @@ export default function FichesLogement() {
         <React.Fragment>
             {ficheLogement ? (
                 <div className="body-fiche">
-                    <img src={ficheLogement.pictures[0]} />
+                    <Carrousel listeImages={ficheLogement.pictures} />
                     <div className="infobox">
                         <div className="info1">
                             <div>
@@ -24,7 +25,7 @@ export default function FichesLogement() {
                             </div>
                             <div>
                                 <h4>{ficheLogement.host.name}</h4>
-                                <img src={ficheLogement.host.picture} />
+                                <img src={ficheLogement.host.picture} alt="" />
                             </div>
                         </div>
                         <div className="info2">
@@ -45,7 +46,7 @@ export default function FichesLogement() {
                             <Collapse
                                 aproposTitre="Équipements"
                                 aproposTexte={ficheLogement.equipments.map(
-                                    (elementEquipement)=> { return <ul>{elementEquipement}</ul>}
+                                    (elementEquipement) => { return <ul>{elementEquipement}</ul> }
                                 )}
                             />
                         </div>

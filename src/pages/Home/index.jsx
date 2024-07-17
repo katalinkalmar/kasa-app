@@ -13,7 +13,8 @@ export default function Home() {
         {
           donneeLogement.map(
             (elementLogement) => {
-              return <Vignette
+              return <Vignette 
+              ficheId={elementLogement.id}
                 imageSrc={elementLogement.cover}
                 titreVignette={elementLogement.title}
               />
