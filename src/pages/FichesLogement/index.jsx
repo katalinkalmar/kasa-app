@@ -20,25 +20,27 @@ export default function FichesLogement() {
                     <div className="infobox">
                         <div className="info1">
                             <div>
-                                <h2>{ficheLogement.title}</h2>
-                                <h4>{ficheLogement.location}</h4>
+                                <h2 className="titre-logement" >{ficheLogement.title}</h2>
+                                <h4 className="localisation-logement">{ficheLogement.location}</h4>
                             </div>
                             <div>
-                                <h4>{ficheLogement.host.name}</h4>
+                                <h4 classname="nom-proprietaire">{ficheLogement.host.name}</h4>
                                 <img src={ficheLogement.host.picture} alt="" />
                             </div>
                         </div>
                         <div className="info2">
-                            <div>
+                            <div className="etiquette">
                                 {ficheLogement.tags.map((elementEtiquette) => {
                                     return <Etiquette nomEtiquette={elementEtiquette} />
                                 })}
                             </div>
+                            <div className="note">
                             <Notation note={ficheLogement.rating} />
-
+                            </div>
 
                         </div>
                         <div className="info3">
+                            <section className="info-description">
                             <Collapse
                                 aproposTitre="Description"
                                 aproposTexte={ficheLogement.description}
@@ -49,6 +51,7 @@ export default function FichesLogement() {
                                     (elementEquipement) => { return <ul>{elementEquipement}</ul> }
                                 )}
                             />
+                            </section>
                         </div>
                     </div>
                 </div>

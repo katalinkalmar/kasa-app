@@ -5,11 +5,12 @@ import { Link } from "react-router-dom"
 export default function Banner() {
     return (
         <div className="banner">
-        <img src= {logoKasa}/>
+        <img src= {logoKasa} alt="logo"/>
             <div className="nav">
-            <Link to="/">Accueil</Link>
-            <Link to="/Apropos">A Propos</Link>
-           
+          <ul> 
+            <li> <Link to="/">Accueil</Link></li>
+            <li><Link to="/Apropos">A Propos</Link></li>
+            </ul>
             </div>
         </div>
     )
