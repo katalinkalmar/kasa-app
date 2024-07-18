@@ -6,8 +6,10 @@
 }
 
 .body-home>img {
-    width: 100%;
+   max-width: 100%;
     border-radius: 25px;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 .body-home>.galerie {
