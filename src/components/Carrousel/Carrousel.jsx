@@ -28,7 +28,7 @@ export default function Carrousel(props) {
                     <>
                         <img src={flecheGauche} className="carrousel-control-prev" onClick={handlePrevClick}/>
                         <img src={flecheDroite} className="carrousel-control-next" onClick={handleNextClick}/>
-                        <span className="carrousel-indicators">{activeIndex}/{images.length - 1}</span>
+                        <span className="carrousel-indicators">{activeIndex+1}/{images.length}</span>
                     </>
                 )
             }
