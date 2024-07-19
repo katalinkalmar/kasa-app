@@ -9,12 +9,23 @@
 
     p {
         color:white;
-        font-family: Montserrat;
     }
     img {
         margin-top:30px;
         width: 122px;
         height: 4Opx;
 
+    }
+}
+
+@media screen and (max-width: $breakpoint) {
+    .FooterBox{
+        height: 210px;
+        justify-content: center;
+        p {
+            @include font(12px, 500);
+            width: 133px;
+            text-align: center;
+        }
     }
 }

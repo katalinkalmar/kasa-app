@@ -1,12 +1,11 @@
 import Collapse from "../../components/Collapse/Collapse"
 import donneesApropos from "../../donnees/apropos.json"
-import image from "../../assets/img_apropos.png"
-import "./Apropos.scss"
+import image from "../../assets/ImageSource2.png"
 
 export default function Apropos() {
     return (
-        <div className="body">
-            <img src={image}/>
+        <div className="bodyApropos">
+            <img className="imageBanner" src={image}/>
             <div className="collapseList">
                 {
                     donneesApropos.map(

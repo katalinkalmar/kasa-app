@@ -1,18 +1,37 @@
-.body {
+.bodyApropos {
     display: flex;
     flex-direction: column;
-    padding: 40px 100px;
-    gap: 40px
+    gap: 40px;
 
-}
-.body > img {
-    width: 100%;
-    border-radius: 25px;
+    .imageBanner {
+        width: 100%;
+        height: 223px;
+        border-radius: 25px;
+        filter: brightness(70%);
+        object-fit: cover;
+    }
+
+    .collapseList {
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        padding: 0 100px;
+    }
 }
 
-.collapseList {
-    display: flex;
-    flex-direction: column;
-    gap:30px;
-    padding:0 100px;
+@media screen and (max-width: $breakpoint) {
+    .bodyApropos {
+        padding: 0;
+        gap: 20px;
+
+        .imageBanner{
+            height: 111px;
+            border-radius: 10px;
+        }
+
+        .collapseList {
+            padding: 0; 
+            gap: 20px;
+        }
+    }
 }

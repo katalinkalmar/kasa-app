@@ -1,13 +1,22 @@
 .box-etiquette {
-    display:flex;
+    display: flex;
     background-color: $primary-color;
-    border-radius:10px;
+    border-radius: 10px;
     align-items: center;
     padding: 0 22px;
+    height: 100%;
 
     span {
-        @include font(14px, 700); 
-        color:$background-color;
+        @include font(14px, 700);
+        color: $background-color;
     }
 
+}
+
+@media screen and (max-width: $breakpoint) {
+    .box-etiquette {
+        span {
+            @include font(10px, 700);
+        }
+    }
 }

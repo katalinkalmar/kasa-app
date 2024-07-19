@@ -8,6 +8,7 @@
     max-height: 0;
 
     p {
+        padding: 0 20px;
         @include font(18px, 400)
     }
 }
@@ -38,11 +39,27 @@
 }
 
 .fleche {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     transition: 0.4s ease-in-out;
 }
 
 .rotated {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: $breakpoint) {
+    .barreDepliant {
+
+        h2 {
+            @include font(13px, 700)
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+
+        padding: 10px;
+    }
 }

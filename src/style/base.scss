@@ -5,15 +5,28 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
   padding: 45px 100px 0 100px;
 }
 
 .App {
-  gap: 50px;
   display: flex;
   flex-direction: column;
+  gap: 50px;
+
+  main {
+    height: auto;
+  }
 }
+
+@media screen and (max-width: $breakpoint) {
+  body {
+    padding: 35px 20px 0 20px;
+  }
+
+  .App {
+    gap: 30px
+  }
+}
+

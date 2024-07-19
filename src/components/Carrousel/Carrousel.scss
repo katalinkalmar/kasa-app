@@ -58,3 +58,20 @@
     @include font(18px, 500);
     color: white;
 }
+
+@media screen and (max-width: $breakpoint) {
+    .carrousel {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .carrousel-control-prev,
+    .carrousel-control-next {
+        width: 24px;
+        height: 24px;
+    }
+
+    .carrousel-indicators {
+        visibility: collapse;
+    }
+}
