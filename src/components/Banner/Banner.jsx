@@ -2,15 +2,16 @@ import logoKasa from "../../assets/LOGO.svg"
 import { Link } from "react-router-dom"
 
 
-export default function Banner() {
+export default function Banner(props) {
     return (
         <div className="banner">
-        <img src= {logoKasa} alt="logo"/>
+            <img src={logoKasa} alt="logo" />
             <div className="nav">
-          <ul> 
-            <li> <Link to="/">Accueil</Link></li>
-            <li><Link to="/Apropos">A Propos</Link></li>
-            </ul>
+                <ul>
+                    
+                    <li> <Link to="/">Accueil</Link></li>
+                    <li><Link to="/Apropos">A Propos</Link></li>
+                </ul>
             </div>
         </div>
     )

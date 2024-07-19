@@ -16,9 +16,9 @@
             text-decoration: none;
         }
 
-        a:hover {
-            color: #220450;
-            border-bottom: 3px solid #220450;
+        a:focus {
+
+            border-bottom: 2px solid black;
         }
 
         ul {

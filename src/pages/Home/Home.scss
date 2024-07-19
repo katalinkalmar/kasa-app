@@ -1,12 +1,13 @@
 .body-home {
     display: flex;
+    margin: auto;
+    max-width: 1240px;
     flex-direction: column;
-    padding: 40px 100px;
     gap: 40px;
 }
 
 .body-home>img {
-   max-width: 100%;
+    width: 100%;
     border-radius: 25px;
     margin: auto;
     box-sizing: border-box;
@@ -17,7 +18,7 @@
     border-radius: 25px;
     padding: 50px;
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
     grid-auto-rows: 20vw;
     width: auto;

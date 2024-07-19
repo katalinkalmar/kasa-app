@@ -1,14 +1,17 @@
 .corps-vignette {
     background-color: $primary-color;
-    width: 100%;
+    width: minmax(100%, 340px);
+    max-width: 340px;
     height: 100%;
     border-radius: 10px;
 }
 
 .corps-vignette>div {
     display: flex;
-    width: 20vw;
+    width: 100%;
+    max-width: 340px;
     height: 20vw;
+    max-height: 340px;
     position: relative;
     bottom: 20vw;
 }
