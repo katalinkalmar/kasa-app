@@ -2,6 +2,7 @@
 @import "./base.scss";
 @import "./mixin.scss";
 
+/* SCSS des components */
 @import "../components/Banner/Banner.scss";
 @import "../components/Collapse/Collapse.scss";
 @import "../components/Footer/Footer.scss";
@@ -9,5 +10,7 @@
 @import "../components/Carrousel/Carrousel.scss";
 @import "../components/Etiquette/Etiquette.scss";
 
+/* SCSS des pages */
 @import "../pages/FichesLogement/FichesLogement.scss";
 @import "../pages/ErrorPage/ErrorPage.scss";
+@import "../pages/Home/Home.scss";

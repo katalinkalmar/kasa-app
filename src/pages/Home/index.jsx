@@ -1,7 +1,6 @@
 import React from 'react';
 import Vignette from "../../components/Vignette/Vignette"
 import image from "../../assets/section.png"
-import "./Home.scss"
 import donneeLogement from "../../donnees/logements.json"
 
 
