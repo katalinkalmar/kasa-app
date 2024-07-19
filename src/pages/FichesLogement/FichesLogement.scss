@@ -1,74 +1,94 @@
 .body-fiche {
     display: flex;
     flex-direction: column;
-    padding: 40px 100px;
     gap: 40px;
     margin: auto;
-    background-color: $background-color;
-    font-family: Montserrat;
+    max-width: 1240px;
+
 
     .infobox {
         display: flex;
         flex-direction: column;
-        justify-content:stretch ;
-        align-items: space-between;
+
+        .info1 {
+            display: flex;
+            justify-content: space-between;
+            max-height: 80px;
+
+            .box-titre {
+                display: flex;
+                flex-direction: column;
+
+                .titre-logement {
+                    color: $primary-color;
+                    @include font(36px, 500);
+                }
+
+                .localisation-logement {
+                    @include font(18px, 500);
+                }
+            }
+
+            .box-proprietaire {
+                display: flex;
+                align-items: center;
+
+
+                span {
+                    color: $primary-color;
+                    @include font(18px, 500);
+                    text-align: right;
+                    width: 93px;
+                    margin: 10px;
+
+                }
+
+                img {
+                    border-radius: 64px;
+                    height: 64px;
+                    width: 64px;
+                }
+            }
+
+
+
+
+        }
+
+        .info2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0 24px 0;
+
+
+            .etiquette {
+                display: flex;
+                gap: 10px;
+            }
+
+
+        }
+
+        .info3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 76px;
+.barreDepliant h2{
+    @include font (18px,700);
+}
+
+
+
+
+        }
     }
 
-    .info1 {
-        display: flex;
-        justify-content: space-between;
-
-        .titre-logement {
-            color: $primary-color;
-            font-size: 36;
-            font-weight: medium;
-
-        }
-
-        .localisation-logement {
-            color: black;
-            font-size: 18;
-            font-weight: medium;
-
-        }
-
-        .nom-proprietaire {
-            color: $primary-color;
-            font-size: 18;
-            font-weight: medium;
-        }
-    }
-
-    .info2 {
-        display: flex;
-
-        .etiquette {
-            width: 115px;
-            height: 25px;
-            background-color: $primary-color; 
-            color: white;
-            font-size:14;
-            font-weight: bold;
-            border-radius: 10px;
-        }
-
-        .note {
-           width:196px ; 
-           height:36px;
-        }
-    }
-
-    .info3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: strech;
-
-        .info-description {
-            width:582px;
-            height:52px;
-        }
 
 
-    }
+
+
+
+
+
 
 }

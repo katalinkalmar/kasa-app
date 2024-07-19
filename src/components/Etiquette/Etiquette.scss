@@ -1,0 +1,13 @@
+.box-etiquette {
+    display:flex;
+    background-color: $primary-color;
+    border-radius:10px;
+    align-items: center;
+    padding: 0 22px;
+
+    span {
+        @include font(14px, 700); 
+        color:$background-color;
+    }
+
+}

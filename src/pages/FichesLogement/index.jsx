@@ -19,12 +19,12 @@ export default function FichesLogement() {
                     <Carrousel listeImages={ficheLogement.pictures} />
                     <div className="infobox">
                         <div className="info1">
-                            <div>
-                                <h2 className="titre-logement" >{ficheLogement.title}</h2>
-                                <h4 className="localisation-logement">{ficheLogement.location}</h4>
+                            <div className="box-titre">
+                                <span className="titre-logement" >{ficheLogement.title}</span>
+                                <span className="localisation-logement">{ficheLogement.location}</span>
                             </div>
-                            <div>
-                                <h4 classname="nom-proprietaire">{ficheLogement.host.name}</h4>
+                            <div className="box-proprietaire">
+                                <span classname="nom-proprietaire">{ficheLogement.host.name}</span>
                                 <img src={ficheLogement.host.picture} alt="" />
                             </div>
                         </div>
@@ -40,7 +40,7 @@ export default function FichesLogement() {
 
                         </div>
                         <div className="info3">
-                            <section className="info-description">
+                           
                             <Collapse
                                 aproposTitre="Description"
                                 aproposTexte={ficheLogement.description}
@@ -51,7 +51,7 @@ export default function FichesLogement() {
                                     (elementEquipement) => { return <ul>{elementEquipement}</ul> }
                                 )}
                             />
-                            </section>
+                            
                         </div>
                     </div>
                 </div>

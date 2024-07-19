@@ -1,21 +1,15 @@
-/* Style de base du carrousel */
 .carrousel {
     position: relative;
-    /* Permet le positionnement des boutons de contrôle */
     width: 100%;
-    /* Ajustez la largeur selon vos besoins */
     height: 415px;
-    /* Ajustez la hauteur selon vos besoins */
     overflow: hidden;
+    border-radius: 25px;
 }
 
-/* Style du contenu du carrousel */
 .carrousel-inner {
     overflow: hidden;
-    /* Masque les éléments débordant du carrousel */
 }
 
-/* Style des items du carrousel */
 .carrousel-item {
     position: absolute;
     top: 0;
@@ -27,58 +21,40 @@
     justify-content: center;
     text-align: center;
     transition: transform 0.5s ease-in-out;
-    /* Animation de transition fluide */
+
 }
 
-/* Style des items non actifs du carrousel */
 .carrousel-item.active~.carrousel-item {
     visibility: collapse;
-    /* Décale les items non actifs vers la gauche */
 }
 
-/* Style de l'item actif du carrousel */
 .carrousel-item.active {
     visibility: visible;
-    /* Annule le décalage initial */
 }
 
-
-
-/* Style des boutons de contrôle */
 .carrousel-control-prev,
 .carrousel-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* Centre verticalement les boutons */
     z-index: 100;
-    /* Assure que les boutons sont au-dessus du carrousel */
     cursor: pointer;
 }
 
 .carrousel-control-prev {
-    left: 0;
+    left: 20px;
 }
 
 .carrousel-control-next {
-    right: 0;
+    right: 20px;
 }
 
-/* Style des indicateurs de navigation */
 .carrousel-indicators {
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     padding: 0;
-}
-
-.carrousel-indicator {
-    display: inline-block;
-    margin: 0 4px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    @include font(18px, 500);
+    color: white;
 }

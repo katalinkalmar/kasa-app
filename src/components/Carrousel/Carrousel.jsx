@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import flecheGauche from "../../assets/arrow_back.svg"
+import flecheDroite from "../../assets/arrow_forward.svg"
 
 export default function Carrousel(props) {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -24,8 +26,8 @@ export default function Carrousel(props) {
             {
                 images.length > 1 && (
                     <>
-                        <button className="carrousel-control-prev" onClick={handlePrevClick}>Précédent</button>
-                        <button className="carrousel-control-next" onClick={handleNextClick}>Suivant</button>
+                        <img src={flecheGauche} className="carrousel-control-prev" onClick={handlePrevClick}/>
+                        <img src={flecheDroite} className="carrousel-control-next" onClick={handleNextClick}/>
                         <span className="carrousel-indicators">{activeIndex}/{images.length - 1}</span>
                     </>
                 )
