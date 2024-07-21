@@ -14,7 +14,7 @@ export default function Collapse(props) {
             <div className="barreDepliant">
                 <h2> {props.aproposTitre} </h2>
 
-                <img
+                <img alt=""
                     src={fleche}
                     onClick={toggleCollapse}
                     className={isCollapsed ? "fleche" : "fleche rotated"}

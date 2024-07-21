@@ -18,9 +18,11 @@ function App() {
 			<Banner />
 			<main>
 				<Routes>
+					{/* Définition des différentes routes*/}
 					<Route path="/" element={<Home />} />
 					<Route path="/Apropos" element={<Apropos />} />
 					<Route path="*" element={<ErrorPage />} />
+					{/* Pour les fiches logement on passe l'id en paramètre*/}
 					<Route path="/fichelogement/:id" element={<FichesLogement />} />
 				</Routes>
 			</main>

@@ -1,4 +1,3 @@
-import React from "react"
 import { useParams, Navigate } from "react-router-dom"
 import donneeLogement from "../../donnees/logements.json"
 import Etiquette from "../../components/Etiquette/Etiquette"
@@ -7,13 +6,17 @@ import Collapse from "../../components/Collapse/Collapse"
 import Carrousel from "../../components/Carrousel/Carrousel"
 
 export default function FichesLogement() {
+    //je récupère l'id de la fiche logement présente dans l'url à l'aide du hook useParams.
     const { id } = useParams()
+
+    // On récupère les données du logement à l'aide e l'id dans le fichier json
     const ficheLogement = donneeLogement.find(
         (logement) => logement.id === id
-    )
+    ) //logement est null si l'id n'existe pas
 
     return (
-        <React.Fragment>
+        <>
+            {/* on teste si la fiche logement existe */}
             {ficheLogement ? (
                 <div className="body-fiche">
                     <Carrousel listeImages={ficheLogement.pictures} />
@@ -25,8 +28,8 @@ export default function FichesLogement() {
                                 <span className="localisation-logement">{ficheLogement.location}</span>
                             </div>
                             <div className="etiquette">
-                                {ficheLogement.tags.map((elementEtiquette) => {
-                                    return <Etiquette nomEtiquette={elementEtiquette} />
+                                {ficheLogement.tags.map((elementEtiquette, key) => {
+                                    return <Etiquette nomEtiquette={elementEtiquette} key={key} />
                                 })}
                             </div>
                         </div>
@@ -49,7 +52,7 @@ export default function FichesLogement() {
                     </div>
 
                 </div>
-            ) : (<Navigate replace to="/idnotfound" />)}
-        </React.Fragment>
+            ) : (<Navigate replace to="/idnotfound" />)/* si fiche logement est null, on renvoie l'utilisateur sur la page 404. A l'aide du composant Navigate.*/} 
+        </>
     )
 }

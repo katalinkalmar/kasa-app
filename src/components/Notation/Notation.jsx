@@ -1,20 +1,23 @@
 import logoEtoileActive from "../../assets/etoile-active.svg"
 import logoEtoileInactive from "../../assets/etoile-inactive.svg"
-
+//Pour chaque étoile, on regarde si le num d'étoile est supérieur à l note
+// On décide alors d'afficher soit une étoile remplie soit une vide.
 export default function Rate(props) {
     const repereNotes = [1, 2, 3, 4, 5];
     return (
         <div className="notation-box">
-            {repereNotes.map((note) =>
+            {repereNotes.map((note, key) =>
                 props.note >= note ? (
                     <img
                         src={logoEtoileActive}
                         alt="etoile-remplie"
+                        key={key}
                     />
                 ) : (
                     <img
                         src={logoEtoileInactive}
                         alt="etoile-vide"
+                        key={key}
                     />
                 )
             )}
