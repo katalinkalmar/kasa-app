@@ -3,10 +3,10 @@ import fleche from "../../assets/arrow.svg"
 
 
 export default function Collapse(props) {
-    const [isCollapsed, setIsCollapsed] = useState(false);
+    const [estOuvert, setEstOuvert] = useState(false);
 
     function toggleCollapse() {
-        setIsCollapsed(!isCollapsed);
+        setEstOuvert(!estOuvert);
     };
 
     return (
@@ -17,11 +17,11 @@ export default function Collapse(props) {
                 <img alt=""
                     src={fleche}
                     onClick={toggleCollapse}
-                    className={isCollapsed ? "fleche" : "fleche rotated"}
+                    className={estOuvert ? "fleche" : "fleche rotated"}
                 />
 
             </div>
-            <div className={`collapse ${isCollapsed ? 'collapsed' : ''}`}>
+            <div className={`collapse ${estOuvert ? 'ouvert' : ''}`}>
                 {props.aproposTexte}
             </div>
         </div>

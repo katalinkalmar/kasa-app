@@ -1,3 +1,5 @@
+//Ajout de Routes qui définit l'arborescence des routes.
+//Ajout de Route pour définir une route individuelle.
 import { Routes, Route } from "react-router-dom";
 
 //ajout des pages
