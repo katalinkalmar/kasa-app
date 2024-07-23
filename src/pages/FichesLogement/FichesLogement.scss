@@ -22,6 +22,8 @@
                 .titre-logement {
                     color: $primary-color;
                     @include font(36px, 500);
+                    max-width:950px;
+                    width: 60vw;
                 }
 
                 .localisation-logement {
@@ -61,7 +63,7 @@
             }
         }
     }
-
+/* on répète 2 fois le nombre de colonnes de largeur 1fr= une division de la largeur*/
     .info3 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

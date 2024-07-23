@@ -2,6 +2,7 @@ import { useState } from 'react';
 import flecheGauche from "../../assets/arrow_back.svg"
 import flecheDroite from "../../assets/arrow_forward.svg"
 
+//Le composant Carrousel est défini avec un seul prop: listeImages
 export default function Carrousel(props) {
     // hook useState contient l'index de l'image actuellement affichée
     const [activeIndex, setActiveIndex] = useState(0);
