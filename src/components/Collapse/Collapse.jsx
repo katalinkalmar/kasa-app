@@ -1,5 +1,5 @@
 //Je récupère le hook {useState} de la librairie router.
-//Il permet de gérer l'état intierne du composant: ouvert ou fermé.
+//Il permet de gérer l'état interne du composant: ouvert ou fermé.
 import { useState } from 'react';
 import fleche from "../../assets/arrow.svg"
 
