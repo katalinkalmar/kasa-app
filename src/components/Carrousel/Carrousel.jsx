@@ -4,11 +4,13 @@ import flecheDroite from "../../assets/arrow_forward.svg"
 
 //Le composant Carrousel est défini avec un seul prop: listeImages
 export default function Carrousel(props) {
-    // hook useState contient l'index de l'image actuellement affichée
+    //le hook useState contient l'index de l'image actuellement affichée
     const [activeIndex, setActiveIndex] = useState(0);
     const images = props.listeImages;
 
-    //On définit les fonctions qui s'occupent de changer le state pour changer les images.
+    //On définit les fonctions qui s'occupent de changer le state pour changer les images. Les fonctions 
+    //handlePrevClick et handleNextClick sont appelées quand on clique sur les flèches. 
+    //La fonction anonyme setActiveIndex prend prevState en argument et calcule la nouvelle valeur de activeIndex.
     const handlePrevClick = () => {
         setActiveIndex(prevState => prevState > 0 ? prevState - 1 : images.length - 1);
     };
