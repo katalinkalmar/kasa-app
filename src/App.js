@@ -8,7 +8,7 @@ import Apropos from "./pages/Apropos";
 import ErrorPage from "./pages/ErrorPage";
 import FichesLogement from "./pages/FichesLogement";
 
-//ajout des composants
+//ajout des composants communs à toutes les pages.
 
 import Banner from "./components/Banner/Banner.jsx";
 import Footer from "./components/Footer/Footer.jsx";

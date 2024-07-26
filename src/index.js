@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 // J'importe le composant BrowserRouter de la bibliotheque React Router DOM.
 //BrowserRouter est un composant de routage,il utilise 
 //les URL du navigateur pour gérer les changements de page.
-// C'est à dire qu'il permet de changer de page en fonction de l'URL.
 import { BrowserRouter } from "react-router-dom";
 // Chargement de l'application react:
 import App from "./App";

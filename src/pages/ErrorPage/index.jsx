@@ -1,4 +1,5 @@
 //J'importe le composant Link de la bibliothèque react-router-dom.
+//Il permet de créer des liens internes sans recharger la page.
 import { Link } from "react-router-dom"
 
 export default function ErrorPage() {
